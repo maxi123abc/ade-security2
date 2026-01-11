@@ -17,6 +17,19 @@
       padding: 40px 20px;
       text-align: center;
     }
+    /* STYLING FÜR DAS RUNDE PROFILBILD */
+    .profile-pic {
+      width: 150px;           
+      height: 150px;          
+      object-fit: cover;      
+      border-radius: 50%;     
+      border: 3px solid #66ccff; 
+      margin-bottom: 20px;    
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5); 
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
     header h1 {
       margin: 0;
       font-size: 32px;
@@ -82,6 +95,8 @@
 <body>
 
 <header>
+  <img src="profilbild.jpg" alt="Maximilian Ade" class="profile-pic">
+  
   <h1>Ade Security</h1>
   <p>Digitaler Schutz für dein Zuhause – professionell, verständlich, persönlich.</p>
 </header>
