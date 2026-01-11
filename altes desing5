@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ade Security – Dein IT-Schutz</title>
+  <style>
+    /* GRUNDLAGEN & SCHRIFTEN */
+    :root {
+      --bg-dark: #0f0f0f;
+      --bg-card: #1a1a1a;
+      --accent: #3b82f6; /* Modernes Blau */
+      --accent-hover: #2563eb;
+      --text-main: #ffffff;
+      --text-muted: #a3a3a3;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    h1, h2, h3 {
+      margin-top: 0;
+      font-weight: 700;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* CONTAINER FÜR ZENTRIERUNG */
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* HEADER / HERO SECTION (Wie bei Nick Vogel) */
+    header {
+      padding: 80px 20px 60px;
+      text-align: center;
+      background: radial-gradient(circle at center, #2a2a2a 0%, #0f0f0f 70%);
+    }
+
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      object-position: top; /* Dein Gesicht fixiert */
+      border-radius: 50%;
+      border: 4px solid var(--accent);
+      margin-bottom: 25px;
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+      background: -webkit-linear-gradient(45deg, #fff, #a3d9ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    header p.subtitle {
+      font-size: 20px;
+      color: var(--text-muted);
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    /* BUTTONS (Call to Action) */
+    .btn {
+      display: inline-block;
+      background-color: var(--accent);
+      color: white;
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 18px;
+      transition: transform 0.2s, background 0.2s;
+      box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+    }
+
+    .btn:hover {
+      background-color: var(--accent-hover);
+      transform: translateY(-3px);
+    }
+
+    .btn-whatsapp {
+      background-color: #25D366;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+      margin-top: 10px;
+    }
+    
+    .btn-whatsapp:hover { background-color: #1ebc57; }
+
+    /* ABSCHNITTE */
+    section {
+      padding: 60px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 40px;
+      color: var(--text-main);
+    }
+    
+    .section-title span {
+      border-bottom: 3px solid var(--accent);
+      padding-bottom: 5px;
+    }
+
+    /* KARTEN-DESIGN FÜR PAKETE */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid #333;
+      border-radius: 12px;
+      padding: 30px;
+      transition: transform 0.3s, border-color 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: var(--accent);
+    }
+
+    .card h3 {
+      color: var(--accent);
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 20px 0;
+      display: block;
+    }
+    
+    .price span { font-size: 16px; color: var(--text-muted); font-weight: normal; }
+
+    .features p {
+      margin: 10px 0;
+      color: #ccc;
+      display: flex;
+      align-items: center;
+    }
+    
+    /* Kleiner Haken vor den Features */
+    .features p::before {
+      content: "✓";
+      color: var(--accent);
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #000;
+      padding: 40px 20px;
+      text-align: center;
+      color: #666;
+      font-size: 14px;
+      border-top: 1px solid #222;
+    }
+
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="profilbild.jpg" alt="Maximilian Ade" class="profile-pic">
+  
+  <h1>Digitaler Schutz,<br>ohne Kopfschmerzen.</h1>
+  <p class="subtitle">Ich sichere dein digitales Zuhause ab. Professionell wie im Konzern, persönlich wie ein guter Nachbar.</p>
+  
+  <div style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
+    <a href="mailto:maximilian.ade@gmx.de" class="btn">Jetzt Schutz anfragen</a>
+    <a href="https://wa.me/4915254914103" target="_blank" class="btn btn-whatsapp">✆ Per WhatsApp schreiben</a>
+  </div>
+</header>
+
+<section class="container">
+  <h2 class="section-title"><span>Warum Ade Security?</span></h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Kein Technik-Frust</h3>
+      <p>Ich richte alles fix und fertig für dich ein. Du musst dich um nichts kümmern.</p>
+    </div>
+    <div class="card">
+      <h3>Persönlicher Draht</h3>
+      <p>Keine Hotline, keine Warteschleife. Du sprichst direkt mit mir.</p>
+    </div>
+    <div class="card">
+      <h3>Echte Sicherheit</h3>
+      <p>Ich nutze Profi-Software (Sophos), die sonst nur große Firmen haben.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2 class="section-title"><span>Wähle dein Paket</span></h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Basis</h3>
+      <div class="features">
+        <p>1 Gerät geschützt</p>
+        <p>Profi-Virenschutz (Sophos)</p>
+        <p>Monatlicher Sicherheits-Check</p>
+      </div>
+      <span class="price">11,99€ <span>/ Monat</span></span>
+    </div>
+
+    <div class="card" style="border-color: var(--accent);">
+      <div style="background: var(--accent); color: white; padding: 5px 10px; font-size: 12px; border-radius: 4px; display: inline-block; margin-bottom: 10px;">Beliebt</div>
+      <h3>Komfort</h3>
+      <div class="features">
+        <p>Alles aus Basis</p>
+        <p>Webfilter & Jugendschutz</p>
+        <p>Remote-Support inklusive</p>
+      </div>
+      <span class="price">14,90€ <span>/ Monat</span></span>
+    </div>
+
+    <div class="card">
+      <h3>Familie</h3>
+      <div class="features">
+        <p>Bis zu 3 Geräte</p>
+        <p>Alle Leistungen inklusive</p>
+        <p>Rundum-Sorglos-Schutz</p>
+      </div>
+      <span class="price">99,90€ <span>/ Monat</span></span>
+    </div>
+  </div>
+</section>
+
+<section class="container" style="text-align: center; padding-bottom: 80px;">
+  <h2 class="section-title"><span>So starten wir</span></h2>
+  <p style="color: #a3a3a3; max-width: 600px; margin: 0 auto 30px;">
+    Schreib mir einfach kurz, was du brauchst. Wir klären alles Unverbindlich. Danach richte ich deinen Schutz ein – oft noch am selben Tag.
+  </p>
+  <a href="mailto:maximilian.ade@gmx.de" class="btn">Nachricht schreiben</a>
+</section>
+
+<footer>
+  <p>&copy; 2025 Ade Security – Maximilian Ade</p>
+  <p><a href="mailto:maximilian.ade@gmx.de">maximilian.ade@gmx.de</a></p>
+</footer>
+
+</body>
+</html>
